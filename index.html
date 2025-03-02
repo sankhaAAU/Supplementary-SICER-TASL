@@ -21,13 +21,13 @@
               <div class="is-size-5 publication-authors">
                 <!-- Paper authors -->
                 <span class="author-block">
-                  <a href="#">Sankha Subhra Bhattacharjee</a><sup></sup>,</span
+                  <a href="#">Sankha Subhra Bhattacharjee</a>,</span
                 >
                 <span class="author-block">
-                  <a href="#">Jesper Rindom Jensen</a><sup></sup>,</span
+                  <a href="#">Jesper Rindom Jensen</a>,</span
                 >
                 <span class="author-block">
-                  <a href="#">Mads Græsbøll Christensen</a><sup></sup></span
+                  <a href="#">Mads Græsbøll Christensen</a></span
                 >
                 
               </div>
@@ -35,7 +35,7 @@
               <div class="is-size-5 publication-authors">
                 <span class="author-block"
                   > Audio Analysis Lab<br />
-                  <sup></sup>Aalborg University, Denmark
+                  Aalborg University, Denmark
               </div>
 
               <!-- <div class="column has-text-centered"> -->
@@ -103,15 +103,17 @@
     </section>
     <section class="section">
         <div class="container">
-            <h2 class="title has-text-centered">Abstract</h2>
-            <p class="content">Sound zone control (SZC) algorithms rely on pre-recorded, static impulse responses (IRs) to construct the control filters, and hence their performance is compromised by perturbations within the acoustic environment, an important one being changes in sound speed (resulting primarily from temperature and humidity changes). In this paper, we first examine the impact of sound speed variations on IRs, and both empirically and theoretically show that changes in speed (either increase or decrease) leads to a corresponding compression or expansion of the IRs along the time axis. We then introduce a simple model, termed sinc interpolation-compression/expansion-resampling (SICER), to correct the IRs for sound speed change. Our simulation studies demonstrate that the corrected IRs closely match the actual IRs, for both increase and decrease in sound speed. Furthermore, we discuss several important considerations while correcting IRs for sound speed variations. In the context of sound zone control, using the proposed SICER model, IRs pre-measured at a certain sound speed can be corrected for any sound speed change and optimal control filters at the new sound speed can be re-computed, without the need of re-measuring the new IRs (which is impractical after the SZC is deployed). We integrate the proposed SICER IR correction method with the recently proposed variable span trade-off (VAST) framework for SZC, and propose a SICER-corrected VAST method for sound zone control, resilient to sound speed variations. Simulation studies carried out show that the proposed SICER-corrected VAST method significantly improves acoustic contrast and reduces signal distortion in the presence of sound speed changes.</p>
+            <h2 class="title has-text-centered mt-5">Abstract</h2>
+            <p class="content justified-text">Sound zone control (SZC) algorithms rely on pre-recorded, static impulse responses (IRs) to construct the control filters, and hence their performance is compromised by perturbations within the acoustic environment, an important one being changes in sound speed (resulting primarily from temperature and humidity changes). In this paper, we first examine the impact of sound speed variations on IRs, and both empirically and theoretically show that changes in speed (either increase or decrease) leads to a corresponding compression or expansion of the IRs along the time axis. We then introduce a simple model, termed sinc interpolation-compression/expansion-resampling (SICER), to correct the IRs for sound speed change. Our simulation studies demonstrate that the corrected IRs closely match the actual IRs, for both increase and decrease in sound speed. Furthermore, we discuss several important considerations while correcting IRs for sound speed variations. In the context of sound zone control, using the proposed SICER model, IRs pre-measured at a certain sound speed can be corrected for any sound speed change and optimal control filters at the new sound speed can be re-computed, without the need of re-measuring the new IRs (which is impractical after the SZC is deployed). We integrate the proposed SICER IR correction method with the recently proposed variable span trade-off (VAST) framework for SZC, and propose a SICER-corrected VAST method for sound zone control, resilient to sound speed variations. Simulation studies carried out show that the proposed SICER-corrected VAST method significantly improves acoustic contrast and reduces signal distortion in the presence of sound speed changes.</p>
             <hr class="my-6" />
             <h2 class="title has-text-centered">Abbreviations</h2>
-            <ul class="content">
-              <li><strong>GT:</strong> Ground Truth</li>
-              <li><strong>NC:</strong> No Correction (No correction against sound speed change)</li>
-              <li><strong>SICER:</strong> Sinc Interpolation-Compression/Expansion-Resampling (Proposed Method)</li>
-            </ul>
+            <table class="table is-bordered is-striped is-fullwidth">
+              <tbody>
+                <tr><td><strong>GT</strong></td><td>Ground Truth</td></tr>
+                <tr><td><strong>NC</strong></td><td>No Correction (No correction against sound speed change)</td></tr>
+                <tr><td><strong>SICER</strong></td><td>Sinc Interpolation-Compression/Expansion-Resampling (Proposed Method)</td></tr>
+              </tbody>
+            </table>            
         </div>
     </section>
     <hr class="my-6" />
@@ -120,7 +122,7 @@
         <h2 class="title has-text-centered">Section I: SZC with Simulated RIRs, SICER Corrected & Tested using Simulated RIRs</h2>
         <div class="has-text-centered">
             <img src="static/images/Room_figure_speed_change.png" alt="Setup used for Measuring Practical RIRs" />
-            <p>Fig.1. Top view of the room setup. BZCP: BZ Control Points, DZCP: DZ Control Points, LA: \(16\) Loudspeaker Array, VS: Virtual Source (the \(8^{\textrm{th}}\) loudspeaker in LA). \(RT_{60} = 300\)ms</p>
+            <figcaption class="is-size-6">Fig.1. Top view of the room setup. BZCP: BZ Control Points, DZCP: DZ Control Points, LA: \(16\) Loudspeaker Array, VS: Virtual Source (the \(8^{\textrm{th}}\) loudspeaker in LA). \(RT_{60} = 300\)ms</figcaption>
           </div>          
         <div class="content">
           <h3 class="subtitle has-text-centered mt-6 mb-4">Input \(=\delta(n)\)</h3>
