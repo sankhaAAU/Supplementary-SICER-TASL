@@ -133,5 +133,12 @@ body {
   font-size: smaller;
 }
 
+.justified-text {
+  text-align: justify;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
